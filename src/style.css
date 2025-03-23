@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@theme {
+  --color-light-pink: #ffe5db;
+}
+
+.menu-container {
+  background-image: url("/images/body-background.svg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  object-fit: contain;
+}
+header {
+  background-image: url("/images/header-background.svg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  object-fit: contain;
+  background-size: 100% 80%;
+}
