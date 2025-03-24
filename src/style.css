@@ -1,14 +1,76 @@
 @import "tailwindcss";
 
-@theme {
-  --color-light-pink: #ffe5db;
+@font-face {
+  font-family: "More Sugar";
+  src: url("/fonts/MoreSugar-Thin.ttf") format("truetype");
+  font-weight: 400;
 }
 
-.menu-container {
-  background-image: url("/images/body-background.svg");
-  background-position: center top;
+@font-face {
+  font-family: "More Sugar";
+  src: url("/fonts/MoreSugar-Regular.ttf") format("truetype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "More Sugar";
+  src: url("/fonts/MoreSugar-Extras.ttf") format("truetype");
+  font-weight: 100;
+}
+
+/* Firefox (uncomment to work in Firefox, although other properties will not work!)  */
+/** {
+  scrollbar-width: thin;
+  scrollbar-color: #EB8D96 #FFE5DB;
+}*/
+
+/* Chrome, Edge and Safari */
+*::-webkit-scrollbar {
+  height: 6px;
+  width: 6px;
+}
+*::-webkit-scrollbar-track {
+  border-radius: 6px;
+  background-color: #ffe5db;
+}
+
+*::-webkit-scrollbar-track:hover {
+  background-color: #ffe5db;
+}
+
+*::-webkit-scrollbar-track:active {
+  background-color: #ffe5db;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  background-color: #eb8d96;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #eb8d96;
+}
+
+*::-webkit-scrollbar-thumb:active {
+  background-color: #eb8d96;
+}
+
+@theme {
+  --color-light-pink: #ffe5db;
+  --color-heading: #934f37;
+  --color-body: #584c47;
+}
+
+body {
+  font-family: "More Sugar", cursive;
+}
+
+body {
+  /* background-image: url("/images/body-background.svg"); */
+  background-position: center center;
+  background-size: 90% 100%;
+  background-attachment: scroll;
   background-repeat: no-repeat;
-  object-fit: contain;
 }
 header {
   background-image: url("/images/header-background.svg");

@@ -7,35 +7,180 @@
     <link rel="stylesheet" href="/src/style.css" />
     <title>Oh!! My Cafe</title>
   </head>
-  <body class="bg-light-pink min-h-screen relative">
-    <div
-      class="menu-container mx-auto bg-blue-300 w-full bg-no-repeat h-screen"
+  <body class="bg-light-pink min-h-screen relative pt-40">
+    <header
+      style="height: 220px; max-width: 300px; width: 80%"
+      class="fixed left-2/4 -translate-x-2/4 bg-no-repeat mx-auto flex justify-center object-contain top-12 z-10"
     >
-      <header
-        style="height: 30%; width: 60%"
-        class="relative bg-no-repeat mx-auto flex justify-center object-contain bg-blue-500 mt-32"
-      >
+      <img
+        role="presentation"
+        id="flower"
+        class="absolute size-10 bottom-16 -right-2"
+        src="/images/flower.svg"
+        alt="flower"
+      />
+      <img
+        role="presentation"
+        class="absolute size-10 top-6 left-1/12"
+        id="heart"
+        src="/images/heart.svg"
+        alt="heart"
+      />
+      <img
+        id="logo"
+        src="/images/logo.png"
+        class="size-40 absolute -top-1/6 object-contain"
+        alt="oh!! my cafe - logo"
+      />
+    </header>
+    <div class="mx-auto w-full bg-no-repeat h-10/12">
+      <div style="width: 400px" class="relative mx-auto">
+        <div
+          style="height: 400px; max-width: 400px"
+          class="menu flex flex-col gap-4 items-center bg-no-repeat overflow-y-auto max-h-8/12 pt-12 mx-auto w-full relative"
+        >
+          <img
+            role="presentation"
+            style="max-width: 500px"
+            class="top-7 h-full scale-y-125 w-10/12 fixed filter invert-100 brightness-0 -z-10"
+            src="/images/body-background.svg"
+            alt="body background"
+          />
+          <div class="flex flex-col gap-2">
+            <h3 class="font-bold text-3xl text-heading">{Beverages}</h3>
+            <div class="flex flex-row gap-4 text-body">
+              <ul class="flex flex-col items-end">
+                <li>Tea</li>
+                <li>Coffee</li>
+                <li>Cold Coffee</li>
+                <li>Hot Chocolate</li>
+              </ul>
+              <ul class="flex flex-col w-16 text-center">
+                <li>₹15</li>
+                <li>₹20</li>
+                <li>₹60</li>
+                <li>₹80</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="flex flex-col gap-2">
+            <h3 class="font-bold text-3xl text-center text-heading">
+              {Snacks}
+            </h3>
+            <div class="flex flex-row gap-4 text-body">
+              <ul class="flex flex-col items-end">
+                <li>Maggi</li>
+                <li>Cheese Maggi</li>
+                <li>Noodles</li>
+                <li>Sandwich</li>
+                <li>Grill Sandwich</li>
+                <li>Steam Momos</li>
+                <li>Fried Momos</li>
+                <li>Pizza</li>
+                <li>Paneer Pizza</li>
+                <li>Burger</li>
+                <li>Cheese Burger</li>
+                <li>French Fries</li>
+              </ul>
+              <ul class="flex flex-col w-16 text-center">
+                <li>₹60</li>
+                <li>₹80</li>
+                <li>₹60</li>
+                <li>₹30</li>
+                <li>₹100</li>
+                <li>₹60</li>
+                <li>₹70</li>
+                <li>₹120</li>
+                <li>₹150</li>
+                <li>₹80</li>
+                <li>₹100</li>
+                <li>₹60</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
         <img
           role="presentation"
-          id="flower"
-          class="absolute size-10"
-          src="/images/flower.svg"
-          alt="flower"
+          style="left: -30px"
+          class="absolute size-12 -top-2 -rotate-12"
+          src="/images/cherry.svg"
+          alt="cherry"
         />
+
         <img
           role="presentation"
-          class="absolute size-10 top-5 left-1/12"
-          id="heart"
-          src="/images/heart.svg"
-          alt="heart"
+          style="left: -80px"
+          class="absolute size-24 top-16"
+          src="/images/coffee.svg"
+          alt="coffee"
         />
+
         <img
-          id="logo"
-          src="/images/logo.png"
-          class="size-40 absolute -top-1/6 object-contain"
-          alt="oh!! my cafe - logo"
+          role="presentation"
+          style="left: -80px"
+          class="absolute size-24 top-48"
+          src="/images/noodles.png"
+          alt="noodles"
         />
-      </header>
+
+        <img
+          role="presentation"
+          style="left: -100px"
+          class="absolute size-28 -bottom-10"
+          src="/images/dots.svg"
+          alt="strawberry"
+        />
+
+        <img
+          role="presentation"
+          style="left: -60px"
+          class="absolute size-20 bottom-0"
+          src="/images/burger.svg"
+          alt="burger"
+        />
+
+        <img
+          role="presentation"
+          style="right: -60px"
+          class="absolute size-28 top-32 rotate-12"
+          src="/images/cold-coffee.svg"
+          alt="cold coffee"
+        />
+
+        <img
+          role="presentation"
+          style="right: -60px"
+          class="absolute size-32 -bottom-10"
+          src="/images/momos.svg"
+          alt="momos"
+        />
+
+        <img
+          role="presentation"
+          style="right: -40px"
+          class="absolute size-24 top-4"
+          src="/images/dots.svg"
+          alt="strawberry"
+        />
+
+        <img
+          role="presentation"
+          style="right: 0px"
+          class="absolute size-12 top-12 -rotate-6"
+          src="/images/strawberry.svg"
+          alt="strawberry"
+        />
+
+        <img
+          role="presentation"
+          style="right: 24px"
+          class="absolute size-12 top-24 -rotate-45"
+          src="/images/strawberry.svg"
+          alt="strawberry"
+        />
+      </div>
     </div>
     <script type="module" src="/src/main.ts"></script>
   </body>
